@@ -17,13 +17,15 @@ function AuthStack() {
 }
 
 export default function RootNavigator({ isSignedIn }) {
-  if (!isSignedIn) return <AuthStack />;
-
   return (
     <NavigationContainer>
-      <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={LandingScreen} />
-      </Drawer.Navigator>
+      {!isSignedIn ? (
+        <AuthStack />
+      ) : (
+        <Drawer.Navigator>
+          <Drawer.Screen name="Home" component={LandingScreen} />
+        </Drawer.Navigator>
+      )}
     </NavigationContainer>
   );
 }
