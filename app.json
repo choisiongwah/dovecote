@@ -9,11 +9,14 @@
       "android"
     ],
     "android": {
-      "package": "com.example.dovecote",
+      "package": "com.daemon.dovecote",
       "googleServicesFile": "./google-services.json"
     },
     "ios": {
-      "bundleIdentifier": "com.example.dovecote"
+      "bundleIdentifier": "com.daemon.dovecote",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "extra": {
       "eas": {
