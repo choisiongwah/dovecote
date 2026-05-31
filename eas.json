@@ -3,6 +3,13 @@
     "production": {
       "developmentClient": false,
       "distribution": "store"
+    },
+    "preview": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
     }
   }
 }
