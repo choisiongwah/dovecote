@@ -3,3 +3,4 @@ node_modules
 *.p8
 bundle
 dist
+app.config.js
