@@ -1,5 +1,4 @@
 node_modules
-google-services.json
 *.keystore
 *.p8
 bundle
